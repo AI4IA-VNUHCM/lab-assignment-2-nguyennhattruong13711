@@ -31,6 +31,6 @@ int main(int argc, char *argv[]) {
 			i=i+1;
 		}
 	}
-    return 0;
+	printf(" %d",i);
+	return 0;
 }
-	
