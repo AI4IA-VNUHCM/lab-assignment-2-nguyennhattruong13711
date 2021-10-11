@@ -13,13 +13,19 @@ ______________________________________
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-
 int main(int argc, char *argv[]) {
 	//testing variable, applying it to your algorithm for auto-evaluating
 	int n = atoi(argv[1]);
 	int result;
 	//Your codes here
-	
+	result = 1;
+	int i = n % 2 == 0 ? 2 : 1;
+	for (; i <= n; i += 2)
+	{
+		result *= i;
+	}
+
+
 	printf("%d", result);
 	return 0;
 }
