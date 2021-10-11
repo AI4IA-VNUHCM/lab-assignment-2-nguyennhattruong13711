@@ -15,7 +15,27 @@ int main(int argc, char *argv[]) {
 	int testcase = atoi(argv[1]);
 	
 	//Your codes here
-	
-	
-	return 0;
+	int i, j, num, isPrime;
+    for(i=2; i<=num; i++)
+    {
+        if(num%i==0)
+        {
+            isPrime = 1;
+            for(j=2; j<=i/2; j++)
+            {
+                if(i%j==0)
+                {
+                    isPrime = 0;
+                    break;
+                }
+            }
+            if(isPrime==1)
+            {
+                printf("%d, ", i);
+            }
+        }
+    }
+
+    return 0;
 }
+	
