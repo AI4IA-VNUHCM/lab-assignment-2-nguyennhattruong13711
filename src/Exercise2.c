@@ -18,9 +18,11 @@ int main(int argc, char *argv[]) {
 	//testing variable, applying it to your algorithm for auto-evaluating
 	int n = atoi(argv[1]);
 	int result;
+	int result = 1;
 	//Your codes here
-	if(n % 2 !=0) {
-		for(int i = 1; i < n; i += 2){
+
+	if(n % 2 != 0){
+		for(int i = 1; i <= n; i += 2){
 			result *= i;
 		}
 	}
@@ -29,6 +31,7 @@ int main(int argc, char *argv[]) {
 			result *= i;
 		}
 	}
+
 	printf("%d", result);
 	return 0;
 }
